@@ -85,8 +85,8 @@ section h3 {
 }
 
 .participants ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
   max-height: 110px;
   overflow-y: auto;
@@ -100,6 +100,27 @@ section h3 {
   padding: 6px 8px;
   border-radius: 6px;
   border: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-all;
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.remove-participant:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 /* small helper for empty state */
